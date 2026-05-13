@@ -27,7 +27,8 @@ jobs:
           java-version: 17
 
       - name: Install Dependencies
-        run: npm install
+        # Added --legacy-peer-deps to resolve React Native version conflicts
+        run: npm install --legacy-peer-deps
 
       - name: Make Gradle Executable
         run: chmod +x android/gradlew
