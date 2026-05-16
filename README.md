@@ -1,6 +1,6 @@
 # Free-Local-Agent / DAVClaw & DAVSI
 
-Free-Local-Agent (also known as **DAVClaw** & **DAVSI**) is a full-stack local AI agent platform built on emergent.sh. Rebranded from DroidClaw and Kira.
+Free-Local-Agent (also known as **DAVClaw** & **DAVSI**) is a full-stack local AI agent platform built
 
 ## Architecture — DAVSI 4-Pillar Cognitive Cortex
 
