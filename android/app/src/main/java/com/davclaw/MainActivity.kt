@@ -1,4 +1,4 @@
-package com.davopenmobile
+package com.davclaw
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

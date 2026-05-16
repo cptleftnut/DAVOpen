@@ -1,4 +1,4 @@
-package com.davopenmobile
+package com.davclaw
 
 import android.app.Application
 import com.facebook.react.PackageList

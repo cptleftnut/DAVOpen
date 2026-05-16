@@ -1,0 +1,12 @@
+{
+  "name": "davsi-cortex",
+  "version": "1.0.0",
+  "main": "server.ts",
+  "scripts": {
+    "start": "bun run server.ts",
+    "dev": "bun run --watch server.ts"
+  },
+  "dependencies": {
+    "hono": "^4.0.0"
+  }
+}
