@@ -1,10 +1,9 @@
-name: Build DAVOpen APK
+name: Build DAVClaw APK
 
 on:
   push:
     branches:
       - main
-
   workflow_dispatch:
 
 jobs:
@@ -18,7 +17,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 20
 
       - name: Setup Java
         uses: actions/setup-java@v4
@@ -27,7 +26,6 @@ jobs:
           java-version: 17
 
       - name: Install Dependencies
-        # Added --legacy-peer-deps to resolve React Native version conflicts
         run: npm install --legacy-peer-deps
 
       - name: Make Gradle Executable
@@ -36,10 +34,10 @@ jobs:
       - name: Build APK
         run: |
           cd android
-          ./gradlew assembleRelease
+          ./gradlew assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: DAVOpen-APK
-          path: android/app/build/outputs/apk/release/app-release.apk
+          name: DAVClaw-Debug-APK
+          path: android/app/build/outputs/apk/debug/*.apk
